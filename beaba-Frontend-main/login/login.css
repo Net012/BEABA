@@ -1,0 +1,33 @@
+body {
+  background-color: #148d3f;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 700;
+  font-size: large;
+}
+
+form {
+  width: 35vw;
+  height: 50vh;
+  background-color: #d1d1d1;
+  border-radius: 25px;
+}
+
+h2 {
+  color: #148d3f;
+}
+.btn {
+  border-radius: 20px;
+}
+
+input {
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+}
+.btn-secondary {
+  background-color: #717171;
+}
+p {
+  font-size: smaller;
+}

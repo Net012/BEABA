@@ -1,0 +1,110 @@
+body {
+  width: 100vw;
+  height: 100%;
+  background-color: #ffffff;
+  font-size: larger;
+  font-weight: 600;
+}
+
+nav {
+  height: 100vh;
+  width: 27vw;
+  background-color: #148d3f;
+  padding-top: 20vh;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+}
+
+li {
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.active {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 50px 0 0 50px;
+  border: none;
+}
+
+.active a {
+  color: #000;
+}
+
+.user {
+  background-color: #086100;
+  color: #ffffff;
+  text-align: end;
+  border: 15px solid #086100;
+  border-radius: 0 50px 50px 0;
+  margin-bottom: 20px;
+}
+
+.user h5 {
+  margin-right: 30px;
+}
+
+.div-nav {
+  height: 100%;
+}
+
+.div-templates {
+  background-color: #e7e7e7;
+  width: 65vw;
+  height: 70vh;
+  border-radius: 25px;
+}
+
+.div-botoes {
+  width: 100%;
+}
+
+#Filtrar {
+  color: black;
+  background-color: #cacaca;
+  border: none;
+  border-radius: 25px 0 0 25px;
+}
+
+#Filtrar:hover {
+  background-color: #cacaca;
+  color: black;
+}
+
+#Filtrar:active {
+  background-color: #cacaca;
+  color: black;
+}
+
+.div-tabela {
+  font-size: smaller;
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.linha-final {
+  max-width: 38px;
+}
+
+#mytable-head {
+  background-color: #5b5b5b;
+  border: none;
+  color: white;
+}
+
+.table-bg {
+  background-color: #cacaca;
+}
+
+img {
+  width: 25px;
+}

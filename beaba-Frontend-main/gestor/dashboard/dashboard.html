@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <title>Dashboard</title>
+    <script src="autentica.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+  </head>
+
+  <body class="d-flex flex-row">
+    <nav>
+      <div class="div-nav d-flex flex-column justify-content-around">
+        <ul>
+          <li class="active">
+            <a href="../dashboard/dashboard.html">Dashboard</a>
+          </li>
+          <li><a href="../templatesGestor/Template.html">Templates</a></li>
+          <li><a href="../departamento/departamento.html">Departamento</a></li>
+        </ul>
+
+        <div class="user d-flex justify-content-between align-items-baseline">
+          <button id="sair" class="btn">
+            <img src="../../imagens/Logout.png" alt="" />
+          </button>
+          <h5></h5>
+        </div>
+      </div>
+    </nav>
+    <main class="d-flex flex-column align-items-start mx-3">
+      <div class="div-templates">
+        <div class="graficos d-flex w-100 justify-content-evenly">
+          <div
+            id="grafico1"
+            class="grafico d-flex justify-content-start ps-3"
+          ></div>
+          <div
+            id="grafico2"
+            class="grafico d-flex justify-content-end pe-3"
+          ></div>
+        </div>
+
+        <div class="d-flex justify-content-center pt-5">
+          <div class="input-group w-50">
+            <input
+              id="Pesquisa"
+              type="text"
+              class="form-control"
+              placeholder="Pesquisar por nome de arquivo"
+            />
+          </div>
+        </div>
+
+        <div class="div-tabela">
+          <div class="tabela-uploads p-3">
+            <table
+              class="table-sm table align-middle table-bordered border-dark table-responsive"
+            >
+              <thead class="table-secondary">
+                <tr style="border: none">
+                  <th
+                    style="border-radius: 10px 0 0 0"
+                    id="mytable-head"
+                    scope="col"
+                  >
+                    Nome
+                  </th>
+                  <th id="mytable-head" scope="col">Data envio</th>
+                  <th id="mytable-head" scope="col">Criado por</th>
+                  <th
+                    style="border-radius: 0 10px 0 0"
+                    id="mytable-head"
+                    class="linha-final"
+                    scope="col"
+                  >
+                    Visualizar
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="bodyTabela"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="nomeUsuario.js"></script>
+    <script src="dadosTabela.js"></script>
+    <script src="graficos.js"></script>
+    <script src="logout.js"></script>
+    <script src="pesquisa.js"></script>
+  </body>
+</html>
